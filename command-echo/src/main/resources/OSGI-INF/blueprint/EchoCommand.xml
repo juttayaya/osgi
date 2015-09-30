@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+    <!-- References to OSGi Services -->
+        <reference id="echoApi"
+                   interface="com.jirawat.osgi.api.Echo"/>
+
+    <!-- Karaf command line definition -->
+    <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
+        <command name="jirawat/echo">
+            <action class="com.jirawat.osgi.command.EchoCommand">
+                <property name="echoService" ref="echoApi" />
+            </action>
+        </command>
+    </command-bundle>
+
+</blueprint>
