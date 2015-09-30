@@ -37,7 +37,7 @@
                             com.jirawat.osgi.impl
                         </Private-Package>
                         <Import-Package>
-                            com.jirawat.osgi.api;version="[1.0,2)"
+                            com.jirawat.osgi.api;provide:=true
                         </Import-Package>
                     </instructions>
                 </configuration>
