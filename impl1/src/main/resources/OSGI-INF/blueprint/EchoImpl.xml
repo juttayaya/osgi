@@ -7,12 +7,12 @@
            xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
 
     <!-- Basic Bean Definitions-->
-    <bean id="echoImpl"
+    <bean id="echoImpl1"
           class="com.jirawat.osgi.impl.EchoImpl">
     </bean>
 
     <!-- Osgi Service Related -->
     <!-- Exposing Services -->
-    <service ref="echoImpl"
-             interface="com.jirawat.osgi.api.Echo"/>
+    <service ref="echoImpl1"
+             interface="com.jirawat.osgi.api.Echo" />
 </blueprint>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jirawat.osgi</groupId>
     <artifactId>command-echo</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>bundle</packaging>
     <name>jirawat.com :: tutorial :: command echo</name>
     <description>Provides the OSGi jirawat:echo command line</description>

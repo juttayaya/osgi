@@ -12,5 +12,6 @@
         <module>impl</module>
         <module>command-echo</module>
         <module>impl1</module>
+        <module>command-echo1</module>
     </modules>
 </project>
