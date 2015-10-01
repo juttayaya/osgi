@@ -11,5 +11,6 @@
         <module>api</module>
         <module>impl</module>
         <module>command-echo</module>
+        <module>impl1</module>
     </modules>
 </project>
